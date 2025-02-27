@@ -1,0 +1,14 @@
+/* Colores */
+:root {
+    --primary-color: #00796b;
+    --secondary-color: #5ab7a0;
+    --light-bg-color: #bfecde;
+    --dark-bg-color: #1a7768;
+    --btn-hover-color: #004d40;
+}
+
+body {
+    background-color: var(--light-bg-color);
+}
+
+/* Otros estilos globales */

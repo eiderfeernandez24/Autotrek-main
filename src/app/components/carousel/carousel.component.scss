@@ -1,0 +1,179 @@
+/* Estilos generales de la sección */
+.car-comparison-section {
+    background-color: var(--light-bg-color); /* Color de fondo suave */
+    padding: 80px 0;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: var(--dark-bg-color);
+    margin-bottom: 20px;
+}
+
+p.lead {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    line-height: 1.6;
+}
+
+/* Estilos para las características comparativas */
+.comparison-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Asegura que siempre haya 2 columnas */
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.comparison-feature {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.comparison-feature:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.comparison-feature h3 {
+    font-size: 1.6rem;
+    color: var(--dark-bg-color);
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Barra de características */
+.feature-bar {
+    position: relative;
+    background-color: var(--light-bg-color);
+    height: 18px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.feature-fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    transition: width 0.5s ease-in-out;
+}
+
+/* Información de las características */
+.feature-info {
+    font-size: 1rem;
+    color: var(--dark-bg-color);
+}
+
+.feature-info span {
+    display: block;
+    margin: 5px 0;
+}
+
+/* Simulador de Mantenimiento */
+.maintenance-simulator {
+    background-color: #ffffff;
+    padding: 45px;
+    border-radius: 15px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+    margin-top: 60px;
+    text-align: center;
+}
+
+.maintenance-simulator h3 {
+    font-size: 2rem;
+    color: var(--dark-bg-color);
+    margin-bottom: 25px;
+}
+
+.maintenance-simulator p {
+    font-size: 1.1rem;
+    color: var(--secondary-color);
+    margin-bottom: 30px;
+}
+
+/* Cards de Mantenimiento */
+.maintenance-card {
+    background-color: var(--light-bg-color);
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.maintenance-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.maintenance-card h4 {
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.maintenance-card p {
+    font-size: 1.1rem;
+    color: var(--dark-bg-color);
+    margin-bottom: 12px;
+}
+
+.maintenance-card strong {
+    color: var(--primary-color);
+}
+
+/* Botones */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    padding: 12px 35px;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--btn-hover-color);
+    border-color: var(--btn-hover-color);
+    transform: scale(1.05);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .comparison-row {
+        grid-template-columns: 1fr; /* En pantallas pequeñas, cambia a una sola columna */
+    }
+
+    .comparison-feature {
+        padding: 20px;
+    }
+
+    .maintenance-card {
+        padding: 20px;
+    }
+
+    .maintenance-simulator h3 {
+        font-size: 1.8rem;
+    }
+
+    .feature-bar {
+        height: 14px;
+    }
+
+    .feature-fill {
+        height: 100%;
+    }
+
+    .btn-primary {
+        width: 100%;
+    }
+}
