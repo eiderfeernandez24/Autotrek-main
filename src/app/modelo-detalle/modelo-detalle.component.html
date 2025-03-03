@@ -1,0 +1,13 @@
+<section class="details-section">
+    <div class="container">
+      <h2 class="text-center">{{ modelo.nombre }}</h2>
+      <img [src]="modelo.imagen" class="model-img" [alt]="modelo.nombre">
+      <p class="lead mt-4">{{ modelo.descripcion }}</p>
+      <ul>
+        <li><strong>Motor:</strong> {{ modelo.motor }}</li>
+        <li><strong>Precio:</strong> {{ modelo.precio }}</li>
+        <li><strong>Consumo:</strong> {{ modelo.consumo }}</li>
+        <li><strong>Color:</strong> {{ modelo.color }}</li>
+      </ul>
+    </div>
+  </section>

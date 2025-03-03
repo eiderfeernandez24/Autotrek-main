@@ -1,18 +1,14 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router'; // Importa Router y RouterLink
 
 @Component({
   selector: 'app-navbar',
-  imports: [],
+  standalone: true,
+  imports: [RouterLink],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
-    // Inyectamos el Router en el constructor
-    constructor(private router: Router) {}
 
-    // Método para navegar a la página de servicios
-    goToServicios() {
-      this.router.navigate(['/servicios']);  // Navega a la ruta /servicios
-}
+  constructor(private router: Router) {} // Agrega Router al constructor
 }
