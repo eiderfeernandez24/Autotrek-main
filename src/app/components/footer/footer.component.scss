@@ -1,8 +1,13 @@
 footer {
     background-color: var(--primary-color);
-    color: black;
+    color: black; /* Color del texto en tema claro */
 }
 
 footer p {
     margin: 0;
+}
+
+.dark-theme footer {
+    background-color: #333; /* Un gris oscuro para el fondo en tema oscuro */
+    color: white; /* Texto blanco para el tema oscuro */
 }

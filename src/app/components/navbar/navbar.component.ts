@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { Router, RouterLink } from '@angular/router'; // Importa Router y RouterLink
+import { Router, RouterLink } from '@angular/router';
+import { ThemeService } from '../../theme.service';
 
 @Component({
   selector: 'app-navbar',
@@ -10,5 +11,6 @@ import { Router, RouterLink } from '@angular/router'; // Importa Router y Router
 })
 export class NavbarComponent {
 
-  constructor(private router: Router) {} // Agrega Router al constructor
+  constructor(private router: Router, public themeService: ThemeService) {} // Añadimos ThemeService
+
 }

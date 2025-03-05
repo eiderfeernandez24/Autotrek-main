@@ -6,13 +6,14 @@
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
+    <button class="btn btn-light ms-auto" (click)="themeService.toggleDarkMode()">Cambiar tema</button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
           <a class="nav-link btn" routerLink="/">Inicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link btn" routerLink="/servicios">Servicios</a> 
+          <a class="nav-link btn" routerLink="/servicios">Servicios</a>
         </li>
         <li class="nav-item">
           <a class="nav-link btn" routerLink="/modelos">Modelos</a>

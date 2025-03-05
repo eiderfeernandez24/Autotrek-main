@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { ModeloDetalleComponent } from '../../modelo-detalle/modelo-detalle.component';
 import { CommonModule } from '@angular/common';
+import { ModeloDetalleComponent } from '../modelo-detalle/modelo-detalle.component';
 
 @Component({
   selector: 'app-modelos',

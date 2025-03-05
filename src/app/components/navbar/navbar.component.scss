@@ -25,3 +25,34 @@
 .nav-link:hover {
   color: #5ab7a0;
 }
+
+/* Estilos para el tema oscuro */
+.dark-theme .navbar {
+  background-color: #333; /* Un gris oscuro para el fondo en tema oscuro */
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); /* Sombra clara */
+}
+
+.dark-theme .navbar-brand {
+  color: #000; /* Negro para el título en tema oscuro */
+}
+
+.dark-theme .nav-link {
+  color: #000; /* Negro para los enlaces en tema oscuro */
+}
+
+.dark-theme .navbar-brand:hover {
+  color: #888; /* Un gris más oscuro al pasar el ratón */
+}
+
+.dark-theme .nav-link:hover {
+  color: #888; /* Un gris más oscuro al pasar el ratón */
+}
+
+.dark-theme .btn-light {
+  background-color: #555;
+  color: #fff;
+}
+
+.dark-theme .btn-light:hover {
+  background-color: #777;
+}

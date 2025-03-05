@@ -1,3 +1,32 @@
+#testimonios {
+  background-color: var(--light-bg-color);
+  padding: 50px 0;
+}
+
+#testimonios h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
 .testimonials .carousel-item {
-    text-align: center;
-  }
+  text-align: center;
+}
+
+/* Estilos para el tema oscuro */
+.dark-theme #testimonios {
+  background-color: #222; /* Fondo oscuro */
+  color: #eee; /* Texto claro */
+}
+
+.dark-theme #testimonios h2 {
+  color: #bbb; /* Título gris claro */
+}
+
+.dark-theme .testimonials .carousel-item p {
+  color: #999; /* Texto del testimonio gris claro */
+}
+
+.dark-theme .carousel-control-prev-icon,
+.dark-theme .carousel-control-next-icon {
+  filter: invert(100%); /* Invierte los colores de los iconos de control */
+}

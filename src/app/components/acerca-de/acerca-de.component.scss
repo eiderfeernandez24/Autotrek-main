@@ -1,4 +1,17 @@
 #acerca {
-    background-color: #f8f9fa; /* Un gris claro para el fondo */
-    padding: 50px 0;
-  }
+  background-color: var(--light-bg-color); /* Usa la variable para el tema claro */
+  padding: 50px 0;
+}
+
+.dark-theme #acerca {
+  background-color: #222; /* Usa el mismo fondo oscuro que "Testimonios" */
+  color: #eee; /* Usa el mismo color de texto claro que "Testimonios" */
+}
+
+.dark-theme #acerca h2 {
+  color: #bbb; /* Usa el mismo color de título gris claro que "Testimonios" */
+}
+
+.dark-theme #acerca p { /* Añade estilos para el párrafo en modo oscuro */
+  color: #999; /* Usa el mismo color de texto gris claro que "Testimonios" */
+}

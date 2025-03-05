@@ -27,3 +27,7 @@
     border-radius: var(--border-radius);
     box-shadow: var(--card-shadow);
   }
+
+  .dark-theme .details-section li {
+    color: #90ee90 !important; /* Color verde clarito */
+  }

@@ -177,3 +177,228 @@ p.lead {
         width: 100%;
     }
 }
+
+/* Estilos generales para el tema oscuro */
+.dark-theme {
+    background-color: #1a1a1a; /* Fondo oscuro general */
+    color: #e0e0e0; /* Texto claro general */
+}
+
+/* Navbar */
+.dark-theme .navbar {
+    background-color: #333;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+.dark-theme .navbar-brand {
+    color: #000;
+}
+
+.dark-theme .navbar-brand:hover {
+    color: #555;
+}
+
+.dark-theme .nav-link {
+    color: #000;
+}
+
+.dark-theme .nav-link:hover {
+    color: #555;
+}
+
+.dark-theme .btn-light {
+    background-color: #555;
+    color: #fff;
+}
+
+.dark-theme .btn-light:hover {
+    background-color: #777;
+}
+
+/* Sección "Acerca de Nosotros" */
+.dark-theme #acerca {
+    background-color: #222;
+    color: #eee;
+}
+
+.dark-theme #acerca h2 {
+    color: #bbb;
+}
+
+.dark-theme #acerca p {
+    color: #999;
+}
+
+/* Sección de Servicios */
+.dark-theme #servicios {
+    background-color: #222;
+    color: #eee;
+}
+
+.dark-theme #servicios h2 {
+    color: #bbb;
+}
+
+.dark-theme .service-card {
+    background-color: #333;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.dark-theme .service-card .card-title {
+    color: #ccc;
+}
+
+.dark-theme .service-card .card-text {
+    color: #999;
+}
+
+/* Sección de Recomendaciones */
+.dark-theme .recommendations-section {
+    background-color: #222;
+}
+
+.dark-theme .recommendations-section h2 {
+    color: #bbb;
+}
+
+.dark-theme .recommendations-section p {
+    color: #888;
+}
+
+.dark-theme .recommendation-card {
+    background-color: #333;
+    box-shadow: 0 15px 30px rgba(255, 255, 255, 0.1);
+}
+
+.dark-theme .recommendation-card .card-body {
+    background-color: #333;
+    border-top-color: #555;
+}
+
+.dark-theme .recommendation-card h5 {
+    color: #ccc;
+}
+
+.dark-theme .recommendation-card p {
+    color: #999;
+}
+
+/* Sección de Testimonios */
+.dark-theme #testimonios {
+    background-color: #222;
+    color: #eee;
+}
+
+.dark-theme #testimonios h2 {
+    color: #bbb;
+}
+
+.dark-theme .testimonials .carousel-item p {
+    color: #999;
+}
+
+.dark-theme .carousel-control-prev-icon,
+.dark-theme .carousel-control-next-icon {
+    filter: invert(100%);
+}
+
+/* Sección de Comparación de Coches */
+.dark-theme .car-comparison-section {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+}
+
+.dark-theme h2 {
+    color: #d1d1d1;
+}
+
+.dark-theme p.lead {
+    color: #9e9e9e;
+}
+
+.dark-theme .comparison-feature {
+    background-color: #262626;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.dark-theme .comparison-feature:hover {
+    box-shadow: 0 6px 16px rgba(255, 255, 255, 0.15);
+}
+
+.dark-theme .comparison-feature h3 {
+    color: #bdbdbd;
+}
+
+.dark-theme .feature-bar {
+    background-color: #373737;
+}
+
+.dark-theme .feature-fill {
+    background-color: #64b5f6;
+}
+
+.dark-theme .feature-info {
+    color: #bdbdbd;
+}
+
+.dark-theme .maintenance-simulator {
+    background-color: #262626;
+    box-shadow: 0 4px 16px rgba(255, 255, 255, 0.1);
+}
+
+.dark-theme .maintenance-simulator h3 {
+    color: #d1d1d1;
+}
+
+.dark-theme .maintenance-simulator p {
+    color: #9e9e9e;
+}
+
+.dark-theme .maintenance-card {
+    background-color: #373737;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.08);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.dark-theme .maintenance-card:hover {
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.12);
+}
+
+.dark-theme .maintenance-card h4 {
+    color: #c2c2c2;
+}
+
+.dark-theme .maintenance-card p {
+    color: #fff;
+    margin-bottom: 12px;
+}
+
+/* Sección de Contacto */
+.dark-theme .contact-section {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-theme .contact-section h2 {
+    color: #bbb;
+}
+
+.dark-theme .form-control {
+    background-color: #444;
+    color: #fff;
+    border-color: #666;
+}
+
+.dark-theme .form-control:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+.dark-theme .form-group label {
+    color: #ccc;
+}
+
+.dark-theme #confirmationMessage {
+    color: var(--secondary-color);
+}

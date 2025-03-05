@@ -1,133 +1,163 @@
 /* Sección de recomendaciones con fondo suave */
 .recommendations-section {
-    padding: 80px 0;  /* Espaciado generoso para separar bien los elementos */
-    border-radius: 15px;  /* Bordes redondeados para la sección */
+  padding: 80px 0; /* Espaciado generoso para separar bien los elementos */
+  border-radius: 15px; /* Bordes redondeados para la sección */
+}
+
+/* Título de la sección */
+.recommendations-section h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: fadeInUp 1s ease-out; /* Animación de aparición para el título */
+}
+
+/* Subtítulo debajo del título */
+.recommendations-section p {
+  font-size: 1.2rem;
+  color: #777;
+  margin-bottom: 40px;
+  font-weight: 400;
+  opacity: 0.8;
+  animation: fadeInUp 1.2s ease-out; /* Animación suave de aparición */
+}
+
+/* Estilo para cada tarjeta */
+.recommendation-card {
+  background-color: #fff; /* Fondo blanco para cada tarjeta */
+  border: none; /* Quitamos el borde por defecto */
+  border-radius: 15px; /* Bordes redondeados */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); /* Sombra elegante para cada tarjeta */
+  overflow: hidden; /* Esconde cualquier cosa que sobresalga de la tarjeta */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para el hover */
+  cursor: pointer; /* El cursor cambia a mano para dar interactividad */
+}
+
+/* Efecto hover en las tarjetas */
+.recommendation-card:hover {
+  transform: translateY(-10px); /* Efecto de deslizamiento hacia arriba */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al hacer hover */
+}
+
+/* Imagen dentro de la tarjeta */
+.recommendation-card img {
+  width: 100%;
+  height: 250px; /* Altura fija para las imágenes */
+  object-fit: cover; /* Asegura que las imágenes cubran el área sin deformarse */
+  transition: transform 0.5s ease; /* Efecto suave para la imagen */
+}
+
+/* Efecto de zoom en la imagen */
+.recommendation-card:hover img {
+  transform: scale(1.05); /* Zoom suave de la imagen */
+}
+
+/* Contenido de la tarjeta (título y descripción) */
+.recommendation-card .card-body {
+  padding: 20px;
+  text-align: center; /* Centrado de texto dentro de la tarjeta */
+  background-color: #fff; /* Fondo blanco para la parte inferior de la tarjeta */
+  border-top: 2px solid #00796b; /* Línea sutil en la parte superior */
+}
+
+/* Título de la tarjeta */
+.recommendation-card h5 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+  transition: color 0.3s ease; /* Transición suave para el color */
+}
+
+/* Cambio de color del título al hacer hover */
+.recommendation-card:hover h5 {
+  color: #00796b; /* Color verde al hacer hover */
+}
+
+/* Descripción de la tarjeta */
+.recommendation-card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+  opacity: 0.8;
+  transition: opacity 0.3s ease; /* Transición suave para la opacidad */
+}
+
+/* Efecto de opacidad en la descripción al hacer hover */
+.recommendation-card:hover p {
+  opacity: 1; /* Aumenta la opacidad al hacer hover */
+}
+
+/* Estilo de las columnas */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centra las tarjetas en la fila */
+  gap: 30px; /* Espacio entre las tarjetas */
+}
+
+/* Columnas responsivas */
+.col-12, .col-sm-6, .col-md-4 {
+  flex: 1 1 calc(33.333% - 20px); /* Hace las tarjetas más grandes en pantallas pequeñas */
+  max-width: calc(33.333% - 20px); /* Las tarjetas ocupan un tercio del ancho de la fila */
+}
+
+/* Agrega margen en pantallas más pequeñas */
+@media (max-width: 768px) {
+  .col-12, .col-sm-6 {
+      flex: 1 1 calc(50% - 20px); /* Dos tarjetas por fila en pantallas medianas */
   }
-  
-  /* Título de la sección */
-  .recommendations-section h2 {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 30px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    animation: fadeInUp 1s ease-out;  /* Animación de aparición para el título */
+}
+
+@media (max-width: 576px) {
+  .col-12 {
+      flex: 1 1 100%; /* Una tarjeta por fila en pantallas pequeñas */
   }
-  
-  /* Subtítulo debajo del título */
-  .recommendations-section p {
-    font-size: 1.2rem;
-    color: #777;
-    margin-bottom: 40px;
-    font-weight: 400;
-    opacity: 0.8;
-    animation: fadeInUp 1.2s ease-out; /* Animación suave de aparición */
-  }
-  
-  /* Estilo para cada tarjeta */
-  .recommendation-card {
-    background-color: #fff; /* Fondo blanco para cada tarjeta */
-    border: none;  /* Quitamos el borde por defecto */
-    border-radius: 15px;  /* Bordes redondeados */
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);  /* Sombra elegante para cada tarjeta */
-    overflow: hidden;  /* Esconde cualquier cosa que sobresalga de la tarjeta */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Transición suave para el hover */
-    cursor: pointer;  /* El cursor cambia a mano para dar interactividad */
-  }
-  
-  /* Efecto hover en las tarjetas */
-  .recommendation-card:hover {
-    transform: translateY(-10px);  /* Efecto de deslizamiento hacia arriba */
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);  /* Sombra más pronunciada al hacer hover */
-  }
-  
-  /* Imagen dentro de la tarjeta */
-  .recommendation-card img {
-    width: 100%;
-    height: 250px;  /* Altura fija para las imágenes */
-    object-fit: cover;  /* Asegura que las imágenes cubran el área sin deformarse */
-    transition: transform 0.5s ease;  /* Efecto suave para la imagen */
-  }
-  
-  /* Efecto de zoom en la imagen */
-  .recommendation-card:hover img {
-    transform: scale(1.05);  /* Zoom suave de la imagen */
-  }
-  
-  /* Contenido de la tarjeta (título y descripción) */
-  .recommendation-card .card-body {
-    padding: 20px;
-    text-align: center;  /* Centrado de texto dentro de la tarjeta */
-    background-color: #fff; /* Fondo blanco para la parte inferior de la tarjeta */
-    border-top: 2px solid #00796b;  /* Línea sutil en la parte superior */
-  }
-  
-  /* Título de la tarjeta */
-  .recommendation-card h5 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 15px;
-    text-transform: capitalize;
-    transition: color 0.3s ease;  /* Transición suave para el color */
-  }
-  
-  /* Cambio de color del título al hacer hover */
-  .recommendation-card:hover h5 {
-    color: #00796b;  /* Color verde al hacer hover */
-  }
-  
-  /* Descripción de la tarjeta */
-  .recommendation-card p {
-    font-size: 1rem;
-    color: #555;
-    line-height: 1.5;
-    opacity: 0.8;
-    transition: opacity 0.3s ease;  /* Transición suave para la opacidad */
-  }
-  
-  /* Efecto de opacidad en la descripción al hacer hover */
-  .recommendation-card:hover p {
-    opacity: 1;  /* Aumenta la opacidad al hacer hover */
-  }
-  
-  /* Estilo de las columnas */
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;  /* Centra las tarjetas en la fila */
-    gap: 30px;  /* Espacio entre las tarjetas */
-  }
-  
-  /* Columnas responsivas */
-  .col-12, .col-sm-6, .col-md-4 {
-    flex: 1 1 calc(33.333% - 20px);  /* Hace las tarjetas más grandes en pantallas pequeñas */
-    max-width: calc(33.333% - 20px);  /* Las tarjetas ocupan un tercio del ancho de la fila */
-  }
-  
-  /* Agrega margen en pantallas más pequeñas */
-  @media (max-width: 768px) {
-    .col-12, .col-sm-6 {
-      flex: 1 1 calc(50% - 20px);  /* Dos tarjetas por fila en pantallas medianas */
-    }
-  }
-  
-  @media (max-width: 576px) {
-    .col-12 {
-      flex: 1 1 100%;  /* Una tarjeta por fila en pantallas pequeñas */
-    }
-  }
-  
-  /* Animación de aparición para el título y subtítulo */
-  @keyframes fadeInUp {
-    0% {
+}
+
+/* Animación de aparición para el título y subtítulo */
+@keyframes fadeInUp {
+  0% {
       opacity: 0;
       transform: translateY(50px);
-    }
-    100% {
+  }
+  100% {
       opacity: 1;
       transform: translateY(0);
-    }
   }
-  
+}
+
+/* Estilos para el tema oscuro */
+.dark-theme .recommendations-section {
+  background-color: #222; /* Fondo oscuro */
+}
+
+.dark-theme .recommendations-section h2 {
+  color: #bbb; /* Título gris claro */
+}
+
+.dark-theme .recommendations-section p {
+  color: #888; /* Texto secundario gris */
+}
+
+.dark-theme .recommendation-card {
+  background-color: #333; /* Fondo oscuro para las tarjetas */
+  box-shadow: 0 15px 30px rgba(255, 255, 255, 0.1); /* Sombra clara */
+}
+
+.dark-theme .recommendation-card .card-body {
+  background-color: #333; /* Fondo oscuro para el cuerpo de la tarjeta */
+  border-top-color: #555; /* Línea divisoria gris */
+}
+
+.dark-theme .recommendation-card h5 {
+  color: #ccc; /* Título gris claro */
+}
+
+.dark-theme .recommendation-card p {
+  color: #999; /* Descripción gris claro */
+}

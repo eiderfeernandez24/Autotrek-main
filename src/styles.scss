@@ -1,14 +1,25 @@
 /* Colores */
 :root {
-    --primary-color: #00796b;
-    --secondary-color: #5ab7a0;
-    --light-bg-color: #bfecde;
-    --dark-bg-color: #1a7768;
-    --btn-hover-color: #004d40;
+    --primary-color: #00796b; /* Verde principal */
+    --secondary-color: #5ab7a0; /* Verde secundario */
+    --light-bg-color: #bfecde; /* Fondo claro */
+    --dark-bg-color: #1a7768; /* Fondo oscuro */
+    --btn-hover-color: #004d40; /* Hover de botones */
+    --text-color: #000000; /* Texto claro */
+}
+
+.dark-theme {
+    --light-bg-color: #121212; /* Fondo oscuro alternativo */
+    --dark-bg-color: #292929; /* Fondo oscuro alternativo */
+    --text-color: #ffffff; /* Texto oscuro */
+    --primary-color: #5ab7a0; /* Verde principal alternativo */
+    --secondary-color: #bfecde; /* Verde secundario alternativo */
+    --btn-hover-color: #00796b; /* Hover de botones alternativo */
 }
 
 body {
     background-color: var(--light-bg-color);
+    color: var(--text-color);
 }
 
 /* Otros estilos globales */
