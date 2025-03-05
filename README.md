@@ -1,59 +1,34 @@
-# Autotrek
+# AutoTrek
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.8.
+Este proyecto es una aplicación web para la gestión y comparación de coches.
 
-## Development server
+## Descripción
 
-To start a local development server, run:
+AutoTrek permite a los usuarios buscar, comparar y gestionar información sobre coches. Ofrece funcionalidades para explorar diferentes modelos, comparar sus características y simular costos de mantenimiento.
 
-```bash
-ng serve
-```
+## Funcionalidades
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+* **Búsqueda y visualización de modelos:** Explora coches por marca, modelo y precio.
+* **Comparador de características:** Compara especificaciones clave entre diferentes modelos (potencia, consumo, aceleración, precio).
+* **Simulador de mantenimiento:** Calcula los costos anuales estimados de mantenimiento para cada coche.
+* **Detalles del modelo:** Visualiza información detallada de cada modelo (motor, precio, consumo, color).
+* **Modo oscuro:** Cambia entre temas claro y oscuro para una experiencia visual personalizada.
 
-## Code scaffolding
+## Tecnologías utilizadas
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+* **Frontend:** Angular, HTML, CSS, Bootstrap, Bootstrap Icons
 
-```bash
-ng generate component component-name
-```
+## Instalación
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+1. Clona el repositorio: `git clone https://github.com/eiderfeernandez24/Autotrek-main`
+2. Instala las dependencias: `npm install`
+3. Ejecuta la aplicación: `ng serve`
+4. Abre tu navegador web y navega a `http://localhost:4200/`
 
-```bash
-ng generate --help
-```
+## Uso
 
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+* **Navegación:** Utiliza la barra de navegación para acceder a las diferentes secciones de la aplicación.
+* **Búsqueda:** Utiliza los filtros y la barra de búsqueda para encontrar modelos específicos.
+* **Comparación:** Selecciona los modelos que deseas comparar y visualiza sus características lado a lado.
+* **Simulador de mantenimiento:** Explora los costos estimados de mantenimiento anual para cada modelo.
+* **Modo oscuro:** Haz clic en el icono de la luna en la barra de navegación para cambiar entre temas claro y oscuro.
