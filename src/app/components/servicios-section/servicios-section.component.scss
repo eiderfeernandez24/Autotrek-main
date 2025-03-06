@@ -1,54 +1,114 @@
-#servicios {
-  background-color: var(--light-bg-color);
+/* Block: services */
+.services {
   padding: 50px 0;
+  background-color: var(--light-bg-color); /* Fondo blanco */
 }
 
-#servicios h2 {
+/* Element: services__container */
+.services__container {
+  text-align: center;
+}
+
+/* Element: services__title */
+.services__title {
   text-align: center;
   margin-bottom: 40px;
 }
 
-.service-card {
+/* Element: services__list */
+.services__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 0 20px;
+}
+
+/* Element: services__item */
+.services__item {
+  width: calc(33.333% - 20px);
+  margin-bottom: 30px;
+}
+
+/* Element: services__card */
+.services__card {
   border: none;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  background-color: #f9f9f9;
 }
 
-.service-card:hover {
+.services__card:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-.service-card-img {
+/* Element: services__image */
+.services__image {
   width: 100%;
   height: 200px;
   object-fit: cover;
 }
 
-.row > .col-md-4 {
-  margin-bottom: 30px;
+/* Element: services__card-body */
+.services__card-body {
+  padding: 20px;
 }
 
+/* Element: services__card-title */
+.services__card-title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+/* Element: services__card-text */
+.services__card-text {
+  font-size: 1rem;
+}
+
+/* Modifier: services--dark (tema oscuro) */
 /* Estilos para el tema oscuro */
-.dark-theme #servicios {
+.dark-theme .recommendations-section {
   background-color: #222; /* Fondo oscuro */
-  color: #eee; /* Texto claro */
 }
 
-.dark-theme #servicios h2 {
+.dark-theme .recommendations-section h2 {
   color: #bbb; /* Título gris claro */
 }
 
-.dark-theme .service-card {
+.dark-theme .recommendations-section p {
+  color: #888; /* Texto secundario gris */
+}
+
+.dark-theme .recommendation-card {
   background-color: #333; /* Fondo oscuro para las tarjetas */
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Sombra clara */
+  box-shadow: 0 15px 30px rgba(255, 255, 255, 0.1); /* Sombra clara */
 }
 
-.dark-theme .service-card .card-title {
-  color: #ccc; /* Título de la tarjeta gris claro */
+.dark-theme .recommendation-card .card-body {
+  background-color: #333; /* Fondo oscuro para el cuerpo de la tarjeta */
+  border-top-color: #555; /* Línea divisoria gris */
 }
 
-.dark-theme .service-card .card-text {
-  color: #999; /* Texto de la tarjeta gris claro */
+.dark-theme .recommendation-card h5 {
+  color: black; /* Títulos en negro en modo oscuro */
+}
+
+.dark-theme .recommendation-card p {
+  color: #999; /* Descripción gris claro */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .services__item {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 576px) {
+  .services__item {
+    width: 100%;
+  }
 }

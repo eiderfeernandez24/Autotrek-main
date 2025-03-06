@@ -1,62 +1,81 @@
-/* Estilos generales de la sección */
-.car-comparison-section {
-    background-color: var(--light-bg-color); /* Color de fondo suave */
+/* Block: car-comparison */
+.car-comparison {
+    background-color: var(--light-bg-color);
     padding: 80px 0;
-}
-
-h2 {
+  }
+  
+  /* Element: car-comparison__container */
+  .car-comparison__container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Element: car-comparison__header */
+  .car-comparison__header {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  /* Element: car-comparison__title */
+  .car-comparison__title {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     color: var(--dark-bg-color);
     margin-bottom: 20px;
-}
-
-p.lead {
+    font-size: 2.5rem;
+  }
+  
+  /* Element: car-comparison__description */
+  .car-comparison__description {
     font-size: 1.2rem;
     color: var(--secondary-color);
     line-height: 1.6;
-}
-
-/* Estilos para las características comparativas */
-.comparison-row {
+  }
+  
+  /* Element: car-comparison__features */
+  .car-comparison__features {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Asegura que siempre haya 2 columnas */
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
     margin-top: 30px;
-}
-
-.comparison-feature {
+  }
+  
+  /* Element: car-comparison__feature */
+  .car-comparison__feature {
     background-color: #ffffff;
     padding: 25px;
     border-radius: 12px;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
     text-align: center;
     transition: transform 0.3s ease-in-out;
-}
-
-.comparison-feature:hover {
+  }
+  
+  .car-comparison__feature:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-}
-
-.comparison-feature h3 {
+  }
+  
+  /* Element: car-comparison__feature-title */
+  .car-comparison__feature-title {
     font-size: 1.6rem;
     color: var(--dark-bg-color);
     margin-bottom: 20px;
     font-weight: 600;
-}
-
-/* Barra de características */
-.feature-bar {
+  }
+  
+  /* Element: car-comparison__feature-bar */
+  .car-comparison__feature-bar {
     position: relative;
     background-color: var(--light-bg-color);
     height: 18px;
     border-radius: 10px;
     margin-bottom: 15px;
     overflow: hidden;
-}
-
-.feature-fill {
+  }
+  
+  /* Element: car-comparison__feature-fill */
+  .car-comparison__feature-fill {
     position: absolute;
     top: 0;
     left: 0;
@@ -64,341 +83,133 @@ p.lead {
     background-color: var(--primary-color);
     border-radius: 10px;
     transition: width 0.5s ease-in-out;
-}
-
-/* Información de las características */
-.feature-info {
+  }
+  
+  /* Element: car-comparison__feature-info */
+  .car-comparison__feature-info {
     font-size: 1rem;
     color: var(--dark-bg-color);
-}
-
-.feature-info span {
+  }
+  
+  .car-comparison__feature-info span {
     display: block;
     margin: 5px 0;
-}
-
-/* Simulador de Mantenimiento */
-.maintenance-simulator {
+  }
+  
+  /* Element: car-comparison__maintenance */
+  .car-comparison__maintenance {
     background-color: #ffffff;
     padding: 45px;
     border-radius: 15px;
     box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
     margin-top: 60px;
     text-align: center;
-}
-
-.maintenance-simulator h3 {
+  }
+  
+  /* Element: car-comparison__maintenance-title */
+  .car-comparison__maintenance-title {
     font-size: 2rem;
     color: var(--dark-bg-color);
     margin-bottom: 25px;
-}
-
-.maintenance-simulator p {
+  }
+  
+  /* Element: car-comparison__maintenance-description */
+  .car-comparison__maintenance-description {
     font-size: 1.1rem;
     color: var(--secondary-color);
     margin-bottom: 30px;
-}
-
-/* Cards de Mantenimiento */
-.maintenance-card {
+  }
+  
+  /* Element: car-comparison__maintenance-cards */
+  .car-comparison__maintenance-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  /* Element: car-comparison__maintenance-card */
+  .car-comparison__maintenance-card {
     background-color: var(--light-bg-color);
     border-radius: 12px;
     padding: 25px;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-    margin-bottom: 40px;
     transition: transform 0.3s ease-in-out;
-}
-
-.maintenance-card:hover {
+  }
+  
+  .car-comparison__maintenance-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-}
-
-.maintenance-card h4 {
+  }
+  
+  /* Element: car-comparison__maintenance-card-title */
+  .car-comparison__maintenance-card-title {
     font-size: 1.6rem;
     color: var(--primary-color);
     margin-bottom: 15px;
     font-weight: 600;
-}
-
-.maintenance-card p {
+  }
+  
+  .car-comparison__maintenance-card p {
     font-size: 1.1rem;
     color: var(--dark-bg-color);
     margin-bottom: 12px;
-}
-
-.maintenance-card strong {
+  }
+  
+  .car-comparison__maintenance-card strong {
     color: var(--primary-color);
-}
-
-/* Botones */
-.btn-primary {
-    background-color: var(--primary-color);
-    border-color: var(--primary-color);
-    padding: 12px 35px;
-    font-size: 1.1rem;
-    border-radius: 30px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.btn-primary:hover {
-    background-color: var(--btn-hover-color);
-    border-color: var(--btn-hover-color);
-    transform: scale(1.05);
-}
-
-/* Responsividad */
-@media (max-width: 768px) {
-    .comparison-row {
-        grid-template-columns: 1fr; /* En pantallas pequeñas, cambia a una sola columna */
-    }
-
-    .comparison-feature {
-        padding: 20px;
-    }
-
-    .maintenance-card {
-        padding: 20px;
-    }
-
-    .maintenance-simulator h3 {
-        font-size: 1.8rem;
-    }
-
-    .feature-bar {
-        height: 14px;
-    }
-
-    .feature-fill {
-        height: 100%;
-    }
-
-    .btn-primary {
-        width: 100%;
-    }
-}
-
-/* Estilos generales para el tema oscuro */
-.dark-theme {
-    background-color: #1a1a1a; /* Fondo oscuro general */
-    color: #e0e0e0; /* Texto claro general */
-}
-
-/* Navbar */
-.dark-theme .navbar {
-    background-color: #333;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
-}
-
-.dark-theme .navbar-brand {
-    color: #000;
-}
-
-.dark-theme .navbar-brand:hover {
-    color: #555;
-}
-
-.dark-theme .nav-link {
-    color: #000;
-}
-
-.dark-theme .nav-link:hover {
-    color: #555;
-}
-
-.dark-theme .btn-light {
-    background-color: #555;
-    color: #fff;
-}
-
-.dark-theme .btn-light:hover {
-    background-color: #777;
-}
-
-/* Sección "Acerca de Nosotros" */
-.dark-theme #acerca {
-    background-color: #222;
-    color: #eee;
-}
-
-.dark-theme #acerca h2 {
-    color: #bbb;
-}
-
-.dark-theme #acerca p {
-    color: #999;
-}
-
-/* Sección de Servicios */
-.dark-theme #servicios {
-    background-color: #222;
-    color: #eee;
-}
-
-.dark-theme #servicios h2 {
-    color: #bbb;
-}
-
-.dark-theme .service-card {
-    background-color: #333;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
-}
-
-.dark-theme .service-card .card-title {
-    color: #ccc;
-}
-
-.dark-theme .service-card .card-text {
-    color: #999;
-}
-
-/* Sección de Recomendaciones */
-.dark-theme .recommendations-section {
-    background-color: #222;
-}
-
-.dark-theme .recommendations-section h2 {
-    color: #bbb;
-}
-
-.dark-theme .recommendations-section p {
-    color: #888;
-}
-
-.dark-theme .recommendation-card {
-    background-color: #333;
-    box-shadow: 0 15px 30px rgba(255, 255, 255, 0.1);
-}
-
-.dark-theme .recommendation-card .card-body {
-    background-color: #333;
-    border-top-color: #555;
-}
-
-.dark-theme .recommendation-card h5 {
-    color: #ccc;
-}
-
-.dark-theme .recommendation-card p {
-    color: #999;
-}
-
-/* Sección de Testimonios */
-.dark-theme #testimonios {
-    background-color: #222;
-    color: #eee;
-}
-
-.dark-theme #testimonios h2 {
-    color: #bbb;
-}
-
-.dark-theme .testimonials .carousel-item p {
-    color: #999;
-}
-
-.dark-theme .carousel-control-prev-icon,
-.dark-theme .carousel-control-next-icon {
-    filter: invert(100%);
-}
-
-/* Sección de Comparación de Coches */
-.dark-theme .car-comparison-section {
+  }
+  
+  /* Modifier: car-comparison--dark (tema oscuro) */
+  .car-comparison--dark {
     background-color: #1a1a1a;
     color: #e0e0e0;
-}
-
-.dark-theme h2 {
+  }
+  
+  .car-comparison--dark .car-comparison__title,
+  .car-comparison--dark .car-comparison__feature-title,
+  .car-comparison--dark .car-comparison__maintenance-title,
+  .car-comparison--dark .car-comparison__maintenance-card-title {
     color: #d1d1d1;
-}
-
-.dark-theme p.lead {
+  }
+  
+  .car-comparison--dark .car-comparison__description,
+  .car-comparison--dark .car-comparison__maintenance-description,
+  .car-comparison--dark .car-comparison__feature-info,
+  .car-comparison--dark .car-comparison__maintenance-card p {
     color: #9e9e9e;
-}
-
-.dark-theme .comparison-feature {
+  }
+  
+  .car-comparison--dark .car-comparison__feature,
+  .car-comparison--dark .car-comparison__maintenance {
     background-color: #262626;
     box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-.dark-theme .comparison-feature:hover {
+  }
+  
+  .car-comparison--dark .car-comparison__feature:hover,
+  .car-comparison--dark .car-comparison__maintenance-card:hover {
     box-shadow: 0 6px 16px rgba(255, 255, 255, 0.15);
-}
-
-.dark-theme .comparison-feature h3 {
-    color: #bdbdbd;
-}
-
-.dark-theme .feature-bar {
+  }
+  
+  .car-comparison--dark .car-comparison__feature-bar {
     background-color: #373737;
-}
-
-.dark-theme .feature-fill {
+  }
+  
+  .car-comparison--dark .car-comparison__feature-fill {
     background-color: #64b5f6;
-}
-
-.dark-theme .feature-info {
-    color: #bdbdbd;
-}
-
-.dark-theme .maintenance-simulator {
-    background-color: #262626;
-    box-shadow: 0 4px 16px rgba(255, 255, 255, 0.1);
-}
-
-.dark-theme .maintenance-simulator h3 {
-    color: #d1d1d1;
-}
-
-.dark-theme .maintenance-simulator p {
-    color: #9e9e9e;
-}
-
-.dark-theme .maintenance-card {
+  }
+  
+  .car-comparison--dark .car-comparison__maintenance-card {
     background-color: #373737;
     box-shadow: 0 4px 12px rgba(255, 255, 255, 0.08);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-.dark-theme .maintenance-card:hover {
-    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.12);
-}
-
-.dark-theme .maintenance-card h4 {
-    color: #c2c2c2;
-}
-
-.dark-theme .maintenance-card p {
-    color: #fff;
-    margin-bottom: 12px;
-}
-
-/* Sección de Contacto */
-.dark-theme .contact-section {
-    background-color: #333;
-    color: #fff;
-}
-
-.dark-theme .contact-section h2 {
-    color: #bbb;
-}
-
-.dark-theme .form-control {
-    background-color: #444;
-    color: #fff;
-    border-color: #666;
-}
-
-.dark-theme .form-control:focus {
-    border-color: var(--secondary-color);
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
-}
-
-.dark-theme .form-group label {
-    color: #ccc;
-}
-
-.dark-theme #confirmationMessage {
-    color: var(--secondary-color);
-}
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .car-comparison__features {
+      grid-template-columns: 1fr;
+    }
+  
+    .car-comparison__maintenance-cards {
+      grid-template-columns: 1fr;
+    }
+  }
